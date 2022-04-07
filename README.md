@@ -63,9 +63,11 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Information about installed packages and dependencies
 
-|:-----------------------:|:-------------------------: |
-| [React-Player](https://www.npmjs.com/package/react-player) v.2.9.0 |For videos such as Home hero video |
-| [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel) v.3.2.23 | For sliders such as the home "Our services" slider and "Testimonial" slider|
+| Library/Dependency                                                                                                          |                                                                       Description                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [React-Player](https://www.npmjs.com/package/react-player) v.2.9.0                                                          |                                                            For videos such as Home hero video                                                            |
+| [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel) v.3.2.23                               |                                       For sliders such as the home "Our services" slider and "Testimonial" slider                                        |
+| [Dart Sass Original Page](https://sass-lang.com/dart-sass) or [Dart Sass Github](https://github.com/sass/dart-sass) v.8.1.2 | Sass ins a language extension for CSS that allows the creation of variables, nesting and other features for styling. It was installed as dev dependency. |
 
 ## Other information about NextJS
 
