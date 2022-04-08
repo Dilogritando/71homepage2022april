@@ -1,0 +1,198 @@
+@import "../../styles/variables";
+
+.Navbar {
+  background-color: white;
+  color: $mid-blue;
+  font-family: $PNSemi;
+  &__container {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin: 5px 0; */
+    margin: 5px -35px 5px 0;
+    padding: 10px 14px;
+    @media (min-width: $laptopMin) {
+      display: none;
+    }
+  }
+  &__top {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    &__menuOptions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px 0;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    &__burger {
+      width: max-content;
+      border: 1px solid $light-blue;
+      border-radius: 4px;
+      background-color: transparent;
+      font-family: $PNSemi;
+      font-size: 1em;
+      color: $mid-blue;
+      padding: 6px;
+      cursor: pointer;
+      position: relative;
+      &__icon {
+        margin: 0 10px 0 0;
+      }
+    }
+    &__signup {
+      border: 1px solid $light-blue;
+      border-radius: 4px;
+      background-color: $green;
+      color: white;
+      margin: 10px auto;
+      padding: 6px 17px;
+      font-family: $PNSemi;
+    }
+  }
+  &__proper {
+    background-color: white;
+    padding: 5px 15px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      &__options {
+        width: 100%;
+        list-style: none;
+        &__a {
+          width: max-content;
+          display: flex;
+          align-items: center;
+          font-family: $PNSemi;
+          padding: 0;
+          margin: 5px 0;
+          cursor: pointer;
+        }
+        &__serviceContainer {
+          display: flex;
+          flex-direction: column;
+        }
+        &__home {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("/assets/navbarIcons/HomeIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__services {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          align-self: flex-start;
+          flex-wrap: nowrap;
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          font-size: inherit;
+          cursor: pointer;
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("/assets/navbarIcons/servicesIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+          &__list {
+            flex-direction: column;
+            margin: 0 0 0 50px;
+          }
+        }
+        &__about {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("/assets/navbarIcons/AboutIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__blog {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("/assets/navbarIcons/BlogsIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__contact {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("/assets/navbarIcons/ContactIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__login {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("/assets/navbarIcons/LoginIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+  &__services {
+    list-style: none;
+    margin: 10px 0px;
+    cursor: pointer;
+    &:hover {
+      color: $orange;
+    }
+  }
+}

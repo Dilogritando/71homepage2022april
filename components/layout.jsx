@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from './Navbar/Navbar'
+import Footer from './Footer/Footer'
 
 export default function Layout({ children }) {
   return (
@@ -13,85 +13,84 @@ export default function Layout({ children }) {
             content="Save money and time in FedEx/UPS contract negotiations, late delivery refunds, lost/damaged claims, shipping insurance, and more."
             />
             <link rel="icon" href="/favicon.ico" />
-          <link
+          {/* <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNovaT-Thin.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNovaT-Thin.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNovaCond-Thin.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          {/*  */}
-          <link
-            rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNova-ThinIt.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNovaCond-Thin.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNova-Regular.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNova-ThinIt.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNova-SemiboldIt.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNova-Regular.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNova-Bold.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNova-SemiboldIt.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNova-BoldIt.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNova-Bold.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNova-BlackIt.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNova-BoldIt.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNovaCond-Light.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNova-BlackIt.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNovaCond-Bold.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNovaCond-Light.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNovaA-BoldIt.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNovaCond-Bold.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="fonts/ProximaNovaFontFamily/ProximaNovaA-BlackIt.ttf"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNovaA-BoldIt.ttf"
             as="font"
             crossOrigin=""
           />
+          <link
+            rel="preload"
+            href="/assets/fonts/ProximaNovaFontFamily/ProximaNovaA-BlackIt.ttf"
+            as="font"
+            crossOrigin=""
+          /> */}
 
         </Head>
       <Navbar />
-      <body>
+
         <main>{children}</main>
-      </body>
+
       <Footer />
     </div>
   )

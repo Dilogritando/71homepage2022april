@@ -7,34 +7,113 @@ $orange: #ff7100;
 $footer-blue: #0094FF;
 $header-blue: #006deb;
 
-//Fonts
+//!--Start Fonts--!
 @font-face {
-  font-family: "Proxima Nova Black";
-  src: local("Proxima Nova Black"),
-    url("/fonts/PROXIMANOVABLACK-WEBFONT.TTF") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Proxima Nova Thin";
-  src: local("Proxima Nova Thin"),
-    url("/fonts/PROXIMANOVATHIN-WEBFONT.TTF") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Proxima Nova Semibold";
-  src: local("Proxima Nova Semibold"),
-    url("/fonts/PROXIMANOVASEMIBOLD-WEBFONT.TTF") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Verdana";
-  src: local("Verdana"), url("/fonts/VERDANA.TTF") format("truetype");
-  font-display: swap;
-}
+    font-family: 'Proxima NovaT Thin';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Thin_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  $PNThin: "Proxima NovaT Thin";
 
-$PNBlack: "Proxima Nova Black";
-$PNSemi: "Proxima Nova Semibold";
-$PNThin: "Proxima Nova Thin";
+  @font-face {
+    font-family: 'Proxima NovaC Thin';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Condensed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  $PNCThin: "Proxima NovaC Thin";
+
+  @font-face {
+    font-family: 'Proxima Nova Thin Italics';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Thin-Italic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  $PNThinIt: "Proxima Nova Thin Italics";
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/ProximaNovaFontFamily/ProximaNova-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  $PNRegular: "Proxima Nova";
+
+  @font-face {
+    font-family: 'Proxima Nova Semi It';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Semibold-Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  $PNSemi: "Proxima Nova Semi It";
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Bold-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Proxima Nova Black';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Black-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  $PNBlack: "Proxima Nova Black";
+
+  @font-face {
+    font-family: 'Proxima Nova Cond Lt';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Condensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  $PNCondLt: "Proxima Nova Cond Lt";
+
+  @font-face {
+    font-family: 'Proxima Nova Cond Bold';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Condensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  $PNCondBld: "Proxima Nova Cond Bold";
+
+  @font-face {
+    font-family: 'Proxima Nova A-BoldIt';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Alt-Bold-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  $PNA: "Proxima Nova A";
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Alt-Black-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //!--End fonts--!
 
 //Media Queries - Responsive
 //Mobile
