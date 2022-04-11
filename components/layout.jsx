@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Navbar from './Navbar/Navbar'
+import Header from "../components/Header/Header.jsx";
 import Footer from './Footer/Footer'
+import styles from "../styles/Home.module.scss";
 
 export default function Layout({ children }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className='layout'>
         <Head>
@@ -87,9 +89,13 @@ export default function Layout({ children }) {
           /> */}
 
         </Head>
-      <Navbar />
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
-        <main>{children}</main>
+        <main className={
+          isMenuOpen === false
+            ? `${styles.Home__main}`
+            : `${styles.Home__main__menuOpen}`
+        }>{children}</main>
 
       <Footer />
     </div>
