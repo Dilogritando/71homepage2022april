@@ -1,69 +1,47 @@
 @import "../../styles/variables";
 
 .Navbar {
-  background-color: white;
-  color: $mid-blue;
-  font-family: $PNSemi;
   &__container {
     position: relative;
     top: 0;
     left: 0;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* margin: 5px 0; */
-    margin: 5px -35px 5px 0;
-    padding: 10px 14px;
-    /* @media (min-width: $laptopMin) {
-      display: none;
-    } */
-  }
-  &__top {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    top: 0;
-    left: 0;
-    &__menuOptions {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 10px 0;
-      position: relative;
-      top: 0;
-      left: 0;
+    margin: 0 0 0 0;
+    padding:0 0 0 0;
+    @media (min-width: $laptopMin) {
+      width: 75%;
     }
     &__burger {
-      width: max-content;
-      border: 1px solid $light-blue;
+      width: 71px;
+      height: 54px;
+      border: none;
       border-radius: 4px;
-      background-color: transparent;
+      background-color: white;
       font-family: $PNSemi;
       font-size: 1em;
       color: $mid-blue;
-      padding: 6px;
+      padding: 5px 7px 6px 21px;
       cursor: pointer;
       position: relative;
+      @media (min-width: $laptopMin) {
+        display: none;
+      }
       &__icon {
         margin: 0 10px 0 0;
       }
     }
-    &__signup {
-      border: 1px solid $light-blue;
-      border-radius: 4px;
-      background-color: $green;
-      color: white;
-      margin: 10px auto;
-      padding: 6px 17px;
-      font-family: $PNSemi;
-    }
   }
   &__proper {
     background-color: white;
-    padding: 5px 15px;
+    @media (min-width: $laptopMin) {
+      background-color: transparent;
+      width: 100%;
+    }
+    @media (max-width: $tabletMax) {
+      display: none;
+    }
     &__list {
       display: flex;
       flex-direction: column;
@@ -71,24 +49,40 @@
       flex-wrap: nowrap;
       margin: 0 0 0 0;
       padding: 0 0 0 0;
+      @media (min-width: $laptopMin) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
       &__options {
-        width: 100%;
         list-style: none;
+        color: $footer-blue;
+        font-family: $PNRegular;
+        font-weight: bold;
+        font-size: 1rem;
+        p {
+          color: $footer-blue;
+          font-family: $PNRegular;
+          font-weight: bold;
+          font-size: 1rem;
+        }
         &__a {
           width: max-content;
           display: flex;
           align-items: center;
-          font-family: $PNSemi;
           padding: 0;
           margin: 5px 0;
           cursor: pointer;
+          @media (min-width: $laptopMin) {
+            margin: 0;
+          }
         }
         &__serviceContainer {
           display: flex;
           flex-direction: column;
         }
         &__home {
-          &::before {
+          /* &::before {
             content: "";
             background-size: 100% 100%;
             display: inline-block;
@@ -96,7 +90,7 @@
             height: 20px;
             background-image: url("/assets/navbarIcons/HomeIcon.svg");
             margin: 0 18px 0 0;
-          }
+          } */
           &:hover {
             color: $orange;
           }
@@ -111,14 +105,19 @@
           padding: 0 0 0 0;
           font-size: inherit;
           cursor: pointer;
-          &::before {
+          /* &::before {
             content: "";
             background-size: 100% 100%;
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-image: url("/assets/navbarIcons/servicesIcon.svg");
+            /* background-image: url("/assets/navbarIcons/servicesIcon.svg");
             margin: 0 18px 0 0;
+          } */
+          &::after{
+            content: url("../../public/assets/navbarIcons/arrow-down.png");
+            background-size: 100% 100%;
+            margin: 0 0 0 12px;
           }
           &:hover {
             color: $orange;
@@ -129,57 +128,63 @@
           }
         }
         &__about {
-          &::before {
+          /* &::before {
             content: "";
             background-size: 100% 100%;
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-image: url("/assets/navbarIcons/AboutIcon.svg");
+            /* background-image: url("/assets/navbarIcons/AboutIcon.svg");
             margin: 0 18px 0 0;
+          } */
+          &::after{
+            content: url("../../public/assets/navbarIcons/arrow-down.png");
+            background-size: 100% 100%;
+            margin: 0 0 0 12px;
           }
+          margin: 0 0 0 0;
           &:hover {
             color: $orange;
           }
         }
         &__blog {
-          &::before {
+          /* &::before {
             content: "";
             background-size: 100% 100%;
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-image: url("/assets/navbarIcons/BlogsIcon.svg");
+            /* background-image: url("/assets/navbarIcons/BlogsIcon.svg");
             margin: 0 18px 0 0;
-          }
+          } */
           &:hover {
             color: $orange;
           }
         }
         &__contact {
-          &::before {
+          /* &::before {
             content: "";
             background-size: 100% 100%;
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-image: url("/assets/navbarIcons/ContactIcon.svg");
+            /* background-image: url("/assets/navbarIcons/ContactIcon.svg");
             margin: 0 18px 0 0;
-          }
+          } */
           &:hover {
             color: $orange;
           }
         }
         &__login {
-          &::before {
+/*           &::before {
             content: "";
             background-size: 100% 100%;
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-image: url("/assets/navbarIcons/LoginIcon.svg");
+            /* background-image: url("/assets/navbarIcons/LoginIcon.svg");
             margin: 0 18px 0 0;
-          }
+          } */
           &:hover {
             color: $orange;
           }

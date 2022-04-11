@@ -158,7 +158,7 @@ const Footer = () => {
       </div>
 
       <p className={styles.Footer__legal}>
-        2022 © 71lbs, Inc. All rights reserved.
+        2022 © 71lbs, Inc. <br /> All rights reserved.
       </p>
     </footer>
   );

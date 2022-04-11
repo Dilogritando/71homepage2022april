@@ -4,9 +4,24 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: $PNRegular, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+h4{
+  font-family: $PNRegular;
+  font-weight: bold;
+  font-size: 2.3rem;
+  padding: 0;
+  margin: 20px 0;
+}
+p{
+  font-family: $PNRegular;
+  font-size: 15px;
+  color: black;
+  line-height: 18px;
+  text-align: left;
+}
+
 
 a {
   color: inherit;

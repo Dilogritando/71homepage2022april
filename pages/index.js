@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-
-import Image from "next/image";
 import styles from "../styles/Home.module.scss";
+import MainHomeMarch2022 from "../components/MainHome/MainHomeMarch2022.js";
 
 export default function Home() {
-  return <div className={styles.container}></div>;
+  return (
+    <div className={styles.Home__container}>
+      <MainHomeMarch2022 />
+    </div>
+  );
 }

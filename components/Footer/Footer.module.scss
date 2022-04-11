@@ -2,12 +2,11 @@
 
 .Footer {
   &__container {
-    border: solid 3px purple;
+    /* border: solid 3px purple; */
     background-color: $footer-blue;
     color: white;
-    font-family: $PNSemi;
     width: 100%;
-    margin: 64px 0 0 0;
+    margin: 0px 0 0 0;
     display: flex;
     flex-direction: column;
     padding: 19px 33px 45px 33px;
@@ -63,19 +62,18 @@
   }
   &__left {
     width: 100%;
-    padding: 0;
-    margin: 25px 0 15px 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     @media (min-width: $tabletMin) {
       justify-content: space-between;
-      padding: 0 0 0 0;
-      margin: 0 0 0 0;
     }
     @media (min-width: $laptopMin) {
       width: 30%;
+      margin: 25px 0 15px 0;
     }
     &__logo {
       position: relative;
@@ -85,6 +83,7 @@
       align-items: center;
       padding: 0;
       margin: 0 0 20px 0;
+      width: 231px;
     }
     &__social {
       display: flex;
@@ -96,10 +95,9 @@
       text-align: center;
       .socialIcons {
         width: 100%;
-        height: 50px;
         display: flex;
         flex-direction: row;
-        margin: 1rem 0 0 0;
+        margin: 0 0 62px 0;
         position: relative;
         @media (min-width: $tabletMin) {
           margin: 0 0 0 1rem;
@@ -112,9 +110,6 @@
     }
   }
   &__title {
-    font-size: 36px;
-    padding: 0;
-    margin: 0 0 1rem 0;
   }
   &__list {
     list-style: none;
@@ -152,6 +147,10 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-family: $PNThin;
+    font-family: $PNRegular;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }

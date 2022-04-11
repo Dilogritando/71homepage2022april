@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.scss";
 export default function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className='layout'>
+    <div className={styles.layout__container}>
         <Head>
             <title>71lbs | Shipping refunds &amp; savings |</title>
             <meta
@@ -89,13 +89,16 @@ export default function Layout({ children }) {
           /> */}
 
         </Head>
+
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
-        <main className={
-          isMenuOpen === false
-            ? `${styles.Home__main}`
-            : `${styles.Home__main__menuOpen}`
-        }>{children}</main>
+        <main className={styles.layout__main
+          /* isMenuOpen === false
+            ? `${styles.layout__main}`
+            : `${styles.layout__main__menuOpen}` */
+        }>
+          {children}
+        </main>
 
       <Footer />
     </div>
