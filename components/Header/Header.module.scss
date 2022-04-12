@@ -20,6 +20,9 @@
       justify-content: space-between;
       padding: 1rem 2rem;
     }
+    @media (max-width: $laptopMin) {
+      padding: 10px 0 0 0;
+    }
     &__NavbarLogo{
       display: flex;
       flex-direction: row-reverse;

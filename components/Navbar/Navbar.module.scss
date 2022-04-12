@@ -22,6 +22,7 @@
       font-family: $PNSemi;
       font-size: 1em;
       color: $mid-blue;
+      margin: 10px 0 0 0;
       padding: 5px 7px 6px 21px;
       cursor: pointer;
       position: relative;
@@ -65,6 +66,16 @@
           font-family: $PNRegular;
           font-weight: bold;
           font-size: 1rem;
+          &:hover {
+            color: $orange;
+          }
+        }
+        a {
+          color: $footer-blue;
+          font-family: $PNRegular;
+          font-weight: bold;
+          font-size: 1rem;
+
         }
         &__a {
           width: max-content;
@@ -76,10 +87,20 @@
           @media (min-width: $laptopMin) {
             margin: 0;
           }
+          &:hover {
+            color: $orange;
+          }
         }
         &__serviceContainer {
           display: flex;
           flex-direction: column;
+        }
+        &__aboutContainer{
+          @media (max-width: $laptopMin) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
         }
         &__home {
           /* &::before {
@@ -105,22 +126,10 @@
           padding: 0 0 0 0;
           font-size: inherit;
           cursor: pointer;
-          /* &::before {
-            content: "";
-            background-size: 100% 100%;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            /* background-image: url("/assets/navbarIcons/servicesIcon.svg");
-            margin: 0 18px 0 0;
-          } */
           &::after{
             content: url("../../public/assets/navbarIcons/arrow-down.png");
             background-size: 100% 100%;
             margin: 0 0 0 12px;
-          }
-          &:hover {
-            color: $orange;
           }
           &__list {
             flex-direction: column;
@@ -139,28 +148,18 @@
               justify-content: center;
               color: $light-blue;
             }
-
+            @media (max-width: $laptopMin){
+              margin: 0 0 0 12px;
+            }
           }
         }
         &__about {
-          /* &::before {
-            content: "";
-            background-size: 100% 100%;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            /* background-image: url("/assets/navbarIcons/AboutIcon.svg");
-            margin: 0 18px 0 0;
-          } */
           &::after{
             content: url("../../public/assets/navbarIcons/arrow-down.png");
             background-size: 100% 100%;
             margin: 0 0 0 12px;
           }
           margin: 0 0 0 0;
-          &:hover {
-            color: $orange;
-          }
           &__list{
             @media (min-width: $laptopMin) {
               position: absolute;
@@ -176,55 +175,17 @@
               justify-content: center;
               color: $light-blue;
             }
-          }
-        }
-        &__blog {
-          /* &::before {
-            content: "";
-            background-size: 100% 100%;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            /* background-image: url("/assets/navbarIcons/BlogsIcon.svg");
-            margin: 0 18px 0 0;
-          } */
-          &:hover {
-            color: $orange;
-          }
-        }
-        &__contact {
-          /* &::before {
-            content: "";
-            background-size: 100% 100%;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            /* background-image: url("/assets/navbarIcons/ContactIcon.svg");
-            margin: 0 18px 0 0;
-          } */
-          &:hover {
-            color: $orange;
-          }
-        }
-        &__login {
-/*           &::before {
-            content: "";
-            background-size: 100% 100%;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            /* background-image: url("/assets/navbarIcons/LoginIcon.svg");
-            margin: 0 18px 0 0;
-          } */
-          &:hover {
-            color: $orange;
+            @media (max-width: $laptopMin){
+
+            }
           }
         }
       }
     }
   }
   &__services {
-    width: max-content;
+    min-width: max-content;
+    width: 100%;
     list-style: none;
     margin: 0px 0px;
     padding: 10px;
@@ -232,11 +193,17 @@
     text-align: center;
     &:hover {
       background-color: $header-blue;
+    }
+    a:hover {
       color: white;
+    }
+    @media (max-width: $laptopMin){
+      text-align: left;
     }
   }
   &__about {
-    width: max-content;
+    min-width: max-content;
+    width: 100%;
     list-style: none;
     margin: 0px 0px;
     padding: 10px;
@@ -244,7 +211,27 @@
     text-align: center;
     &:hover {
       background-color: $header-blue;
+    }
+    a:hover {
       color: white;
     }
+    @media (max-width: $laptopMin){
+      text-align: left;
+    }
+    &__list{
+      margin: 0 0 0 12px;
+    }
+  }
+  &__properMobile{
+    border: solid red 3px;
+    border-radius: 0 15px 15px 0;
+    position: absolute;
+    background-color: white;
+    height: 50vh;
+    overflow: scroll;
+    margin: 0 0 0 0;
+    top: 65px;
+    width: max-content;
+    padding: 5px 15px;
   }
 }
