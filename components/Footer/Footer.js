@@ -74,39 +74,39 @@ const Footer = () => {
             <h4 className={styles.Footer__title}>Service Directory</h4>
             <ul className={styles.Footer__list}>
               <li className={styles.Footer__list__options}>
-                <Link href="/shipping-contract-negotiations">
+                <Link href="/services/shipping-contract-negotiations">
                   <a className={styles.Footer__links}>Contract Negotiations</a>
                 </Link>
               </li>
               <li className={styles.Footer__list__options}>
-                <Link href="/shipping-refunds">
+                <Link href="/services/shipping-refunds">
                   <a className={styles.Footer__links}>Shipping Refunds</a>
                 </Link>
               </li>
               <li className={styles.Footer__list__options}>
-                <Link href="/lost-damaged-shipping-claims">
+                <Link href="/services/lost-damaged-shipping-claims">
                   <a className={styles.Footer__links}>
                     Lost &amp; Damaged Claims
                   </a>
                 </Link>
               </li>
               <li className={styles.Footer__list__options}>
-                <Link href="/amazon-shipping-fba">
+                <Link href="/services/amazon-shipping-fba">
                   <a className={styles.Footer__links}>Amazon FBA</a>
                 </Link>
               </li>
               <li className={styles.Footer__list__options}>
-                <Link href="/shipping-insurance">
+                <Link href="/services/shipping-insurance">
                   <a className={styles.Footer__links}>Shipping Insurance</a>
                 </Link>
               </li>
               <li className={styles.Footer__list__options}>
-                <Link href="/fedex-ex-ray-shipping">
+                <Link href="/services/fedex-ex-ray-shipping">
                   <a className={styles.Footer__links}>FedEx Ex-Ray</a>
                 </Link>
               </li>
               <li className={styles.Footer__list__options}>
-                <Link href="/premium-shipping-analytics">
+                <Link href="/services/premium-shipping-analytics">
                   <a className={styles.Footer__links}>
                     Premium Shipping Analytics
                   </a>

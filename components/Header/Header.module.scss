@@ -18,7 +18,7 @@
 
     @media (min-width: $tabletMin) {
       justify-content: space-between;
-      padding: 0 2rem;
+      padding: 1rem 2rem;
     }
     &__NavbarLogo{
       display: flex;
@@ -89,9 +89,9 @@
       font-weight: bold;
       font-size: 1.3em;
       width: max-content;
-      &:hover{
-        border: 1px solid $mid-blue;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      &:hover {
+        background-color: $header-blue;
+        color: white;
       }
       @media (min-width: $tabletMin) {
         margin: 0 10px 0 0;
@@ -106,6 +106,10 @@
       font-size: 1.3em;
       border: 1px solid $footer-blue;
       border-radius: 4px;
+      &:hover {
+        background-color: $header-blue;
+        color: white;
+      }
     }
   }
 }

@@ -56,7 +56,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                 ${styles["Navbar__services"]}
                             `}
                             >
-                            <Link href="/">
+                            <Link href="/services/shipping-contract-negotiations">
                                 <a>
                                 Contract Negotiations
                                 </a>
@@ -67,7 +67,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                 ${styles["Navbar__services"]}
                             `}
                             >
-                            <Link href="/">
+                            <Link href="/services/shipping-refunds">
                                 <a>
                                 Shipping Refunds
                                 </a>
@@ -78,7 +78,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                 ${styles["Navbar__services"]}
                             `}
                             >
-                            <Link href="/">
+                            <Link href="/services/lost-damaged-shipping-claims">
                                 <a>
                                 Lost &amp; Damaged Claims
                                 </a>
@@ -89,7 +89,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                 ${styles["Navbar__services"]}
                             `}
                             >
-                            <Link href="/">
+                            <Link href="/services/premium-shipping-analytics">
                                 <a>
                                 Premium analytics
                                 </a>
@@ -100,7 +100,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                 ${styles["Navbar__services"]}
                             `}
                             >
-                            <Link href="/">
+                            <Link href="/services/fedex-ex-ray-shipping">
                                 <a>
                                 FedEx Ex-Ray
                                 </a>
@@ -111,7 +111,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                 ${styles["Navbar__services"]}
                             `}
                             >
-                            <Link href="/">
+                            <Link href="/services/shipping-insurance">
                                 <a>
                                 Shipping Insurance
                                 </a>
@@ -122,7 +122,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                 ${styles["Navbar__services"]}
                             `}
                             >
-                            <Link href="/">
+                            <Link href="/services/amazon-shipping-fba">
                                 <a>
                                 Amazon FBA Refunds
                                 </a>
@@ -137,7 +137,8 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                     ${styles["Navbar__proper__list__options__a"]}
                     ${styles["Navbar__proper__list__options__aboutContainer"]}
                     `}
-                    onClick={handleNavAbout}>
+                    onClick={handleNavAbout}
+                    >
                         <p
                             className={`
                                 ${styles["Navbar__proper__list__options__about"]}
@@ -152,7 +153,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                     ${styles["Navbar__about"]}
                                 `}
                                 >
-                                <Link href="/">
+                                <Link href="https://blog.71lbs.com/">
                                     <a>
                                         Blog
                                     </a>
@@ -163,7 +164,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                     ${styles["Navbar__about"]}
                                 `}
                                 >
-                                <Link href="/">
+                                <Link href="/terms-of-service">
                                     <a>
                                         Terms of Service
                                     </a>
@@ -174,7 +175,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                     ${styles["Navbar__about"]}
                                 `}
                                 >
-                                <Link href="/">
+                                <Link href="/privacy-policy">
                                     <a>
                                         Privacy Policy
                                     </a>
@@ -185,7 +186,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                                     ${styles["Navbar__about"]}
                                 `}
                                 >
-                                <Link href="/">
+                                <Link href="/contact-us">
                                     <a>
                                         Contact Us
                                     </a>

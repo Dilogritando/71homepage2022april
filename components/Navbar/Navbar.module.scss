@@ -125,6 +125,21 @@
           &__list {
             flex-direction: column;
             margin: 0 0 0 50px;
+            @media (min-width: $laptopMin) {
+              position: absolute;
+              top: 25px;
+              background: #FFFFFF;
+              box-shadow: 0px 97px 39px rgba(0, 0, 0, 0.01), 0px 55px 33px rgba(0, 0, 0, 0.05), 0px 24px 24px rgba(0, 0, 0, 0.09), 0px 6px 13px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+              padding: 17px 0px;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              align-content: center;
+              justify-content: center;
+              color: $light-blue;
+            }
+
           }
         }
         &__about {
@@ -145,6 +160,22 @@
           margin: 0 0 0 0;
           &:hover {
             color: $orange;
+          }
+          &__list{
+            @media (min-width: $laptopMin) {
+              position: absolute;
+              top: 25px;
+              background: #FFFFFF;
+              box-shadow: 0px 97px 39px rgba(0, 0, 0, 0.01), 0px 55px 33px rgba(0, 0, 0, 0.05), 0px 24px 24px rgba(0, 0, 0, 0.09), 0px 6px 13px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+              padding: 17px 0px;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              align-content: center;
+              justify-content: center;
+              color: $light-blue;
+            }
           }
         }
         &__blog {
@@ -193,11 +224,27 @@
     }
   }
   &__services {
+    width: max-content;
     list-style: none;
-    margin: 10px 0px;
+    margin: 0px 0px;
+    padding: 10px;
     cursor: pointer;
+    text-align: center;
     &:hover {
-      color: $orange;
+      background-color: $header-blue;
+      color: white;
+    }
+  }
+  &__about {
+    width: max-content;
+    list-style: none;
+    margin: 0px 0px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      background-color: $header-blue;
+      color: white;
     }
   }
 }
