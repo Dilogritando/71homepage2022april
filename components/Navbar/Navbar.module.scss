@@ -103,15 +103,6 @@
           }
         }
         &__home {
-          /* &::before {
-            content: "";
-            background-size: 100% 100%;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background-image: url("/assets/navbarIcons/HomeIcon.svg");
-            margin: 0 18px 0 0;
-          } */
           &:hover {
             color: $orange;
           }
@@ -175,55 +166,43 @@
               justify-content: center;
               color: $light-blue;
             }
-            @media (max-width: $laptopMin){
-
-            }
           }
         }
       }
     }
   }
   &__services {
-    min-width: max-content;
     width: 100%;
     list-style: none;
     margin: 0px 0px;
     padding: 10px;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
     &:hover {
       background-color: $header-blue;
     }
     a:hover {
       color: white;
-    }
-    @media (max-width: $laptopMin){
-      text-align: left;
     }
   }
   &__about {
-    min-width: max-content;
     width: 100%;
     list-style: none;
     margin: 0px 0px;
     padding: 10px;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
     &:hover {
       background-color: $header-blue;
     }
     a:hover {
       color: white;
-    }
-    @media (max-width: $laptopMin){
-      text-align: left;
     }
     &__list{
       margin: 0 0 0 12px;
     }
   }
   &__properMobile{
-    border: solid red 3px;
     border-radius: 0 15px 15px 0;
     position: absolute;
     background-color: white;

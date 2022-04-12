@@ -33,7 +33,6 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
             className={styles.Navbar__container__burger__icon}
         />
         </button>
-        {/* This dissappears if tabletMax  */}
         <nav
             className={
                 mobileMenuOpen === false ?
@@ -45,6 +44,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
             <ul className={styles.Navbar__proper__list}>
                 <li className={styles.Navbar__proper__list__options}
                     onMouseOver={() => setServicesOpen(true)}
+                    onMouseOut={() => setServicesOpen(false)}
                 >
                 <ul
                     className={`
@@ -52,6 +52,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                         ${styles["Navbar__proper__list__options__serviceContainer"]}
                     `}
                     onMouseOver={() => setServicesOpen(true)}
+                    onMouseOut={() => setServicesOpen(false)}
                 >
                     <p
                     className={`
@@ -148,12 +149,14 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
                 </li>
                 <li className={styles.Navbar__proper__list__options}
                     onMouseOver={() => setAboutOpen(true)}
+                    onMouseOut={() => setAboutOpen(false)}
                 >
                     <ul className={`
                     ${styles["Navbar__proper__list__options__a"]}
                     ${styles["Navbar__proper__list__options__aboutContainer"]}
                     `}
                     onMouseOver={() => setAboutOpen(true)}
+                    onMouseOut={() => setAboutOpen(false)}
                     >
                         <p
                             className={`
