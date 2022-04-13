@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+
+.BrandsGallery {
+  &__container {
+    /* border: solid red 3px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 3rem 2rem 2.5rem 3rem;
+    @media (min-width: $tabletMin) {
+      /* font-size: 4rem; */
+      /* flex-direction: row; */
+      /* padding: 0 2rem; */
+      /* justify-content: space-between; */
+      margin: 0 2rem;
+    }
+  }
+  &__title {
+    margin: 0 0 40px 0;
+  }
+  &__logosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    &__lineOne {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0 0 60px 0;
+      max-height: 75px;
+    }
+    &__lineTwo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 117px;
+    }
+    &__individual {
+      max-height: 117px;
+      width: 17%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      align-content: center;
+      flex-wrap: nowrap;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      &:hover {
+        height: 170px;
+        width: 30%;
+        position: relative;
+        -webkit-filter: unset; /* Safari 6.0 - 9.0 */
+        filter: unset;
+      }
+    }
+  }
+  &__image {
+  }
+}

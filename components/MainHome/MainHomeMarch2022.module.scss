@@ -2,6 +2,7 @@
 
 .Hero {
   &__container {
+    border: solid purple 3px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -18,19 +19,15 @@
   &__copy {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin: 34px 0 30px 0;
     @media (min-width: $tabletMin) {
       padding: 0 0.5em;
       width: 50%;
     }
     &__title {
-      color: $header-blue;
-      font-family: $PNRegular;
-      font-weight: bold;
-      font-size: 3rem;
-      line-height: 1.1em;
-      margin: 1em 0 1.5rem 0;
-      @media (min-width: $laptopMin) {
-        font-size: 4rem;
+      span{
+        color: $footer-blue;
       }
     }
     &__subtitle {
@@ -47,9 +44,9 @@
       margin: 20px 0 10px 0;
       padding: 2px 13px;
       width: fit-content;
-      border: solid 1px $light-blue;
+      border: none;
       border-radius: 4px;
-      background-color: $green;
+      background-color: $green-btn;
       color: white;
       font-family: $PNSemi;
       font-size: 1.3rem;
@@ -81,7 +78,7 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      /* border: solid 3px purple; */
+      border: solid 3px $dark-blue;
       &__player {
         /* height: 369px; */
         /* border: solid red 2px; */
@@ -111,26 +108,31 @@
       align-content: center;
       justify-content: center;
       align-items: center;
-      margin: 15px 0 0 0;
+      margin: 10px 0 0 0;
       cursor: pointer;
       &__btn {
-        background-image: url("../../public/assets/71assets/HomeVideoPlay.png");
-        background-color: white;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        font-family: $PNThin;
-        font-size: 1.5rem;
-        color: white;
+        font-family: $PNRegular;
+        font-size: 1rem;
+        color: $footer-blue;
+        background-color: transparent;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
         border: none;
-        width: 228px;
-        height: 57px;
-        padding: 0 0 0 1.5em;
+        /* width: 228px;
+        height: 57px; */
+        padding: 0 0 0 0;
         cursor: pointer;
+        &::before{
+          content: url("../../public/assets/componentIcons/playBtn.png");
+          margin: 5px 10px 0 0;
+        }
         @media (max-width: $mobileMax) {
-          width: 143px;
+          /* width: 143px;
           height: 35px;
-          font-size: 1rem;
+          font-size: 1rem; */
         }
       }
     }

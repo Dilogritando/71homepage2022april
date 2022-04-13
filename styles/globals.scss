@@ -7,6 +7,28 @@ body {
   font-family: $PNRegular, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+h1 {
+  font-family: $PNRegular;
+  font-weight: bold;
+  font-size: 2rem;
+  color: $dark-blue;
+  padding: 0;
+  margin: 0;
+  @media (min-width: $tabletMin) {
+    font-size: 3.5rem;
+  }
+}
+h2{
+  font-family: $PNRegular;
+  font-weight: bold;
+  font-size: 2.3rem;
+  padding: 0;
+  margin: 0;
+  color: $subheader-blue;
+  @media (min-width: $tabletMin) {
+    font-size: 2rem;
+  }
+}
 h4{
   font-family: $PNRegular;
   font-weight: bold;

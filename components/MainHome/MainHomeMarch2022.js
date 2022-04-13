@@ -7,8 +7,8 @@ const MainHomeMarch2022 = () => {
     <div className={styles.Hero__container}>
       <div className={styles.Hero__copy}>
         <h1 className={styles.Hero__copy__title}>
-          Save Money <br />
-          on Shipping
+          Save Money <span>on Shipping</span>
+          {/* <br /> */}
         </h1>
         <h2 className={styles.Hero__copy__subtitle}>
           A Service You Can Count On.
