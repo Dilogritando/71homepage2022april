@@ -4,4 +4,33 @@
     &__container{
         border: solid green 3px;
     }
+    h2 {
+
+    }
+    &__content{
+        h2{
+
+        }
+        p{
+
+        }
+        button {
+
+        }
+    }
+    &__mainService{
+        &__image{
+
+        }
+    }
+    &__secondService{
+        &__image{
+
+        }
+    }
+    &__thirdService{
+        &__image{
+
+        }
+    }
 }

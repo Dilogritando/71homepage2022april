@@ -25,13 +25,13 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
             className={styles.Navbar__container__burger}
             onClick={handleMobileMenu}
         >
-        <Image
-            src={Burger}
-            alt="Burger menu icon"
-            width="100%"
-            height="100%"
-            className={styles.Navbar__container__burger__icon}
-        />
+            <Image
+                src={Burger}
+                alt="Burger menu icon"
+                width="100%"
+                height="100%"
+                className={styles.Navbar__container__burger__icon}
+            />
         </button>
         <nav
             className={

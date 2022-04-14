@@ -2,18 +2,48 @@
 
 .Hero {
   &__container {
-    border: solid purple 3px;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
+    margin: 0 0 35px 0;
     //Animation CSS
     animation: containers-load 900ms ease-in;
     @media (min-width: $tabletMin) {
       font-size: 4rem;
-      flex-direction: row;
       justify-content: space-between;
-      margin: 0 2rem 6rem 2rem;
+      /* margin: 0 2rem 6rem 2rem; */
+    }
+  }
+  &__main{
+    position: relative;
+    @media (min-width: $tabletMin) {
+      border: solid red 3px;
+      display: flex;
+      flex-direction: column;
+      height: 65vh;
+      flex-wrap: wrap;
+    }
+    &__box{
+      position: relative;
+      @media (min-width: $tabletMin) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: solid green 3px;
+      }
+    }
+  }
+  &__secondary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    @media (min-width: $tabletMin) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
     }
   }
   &__copy {
@@ -22,7 +52,7 @@
     text-align: center;
     margin: 34px 0 30px 0;
     @media (min-width: $tabletMin) {
-      padding: 0 0.5em;
+      padding: 0;
       width: 50%;
     }
     &__title {
@@ -39,6 +69,12 @@
     &__text {
       color: black;
       font-size: 1rem;
+      border: solid fuchsia 3px;
+      @media (min-width: $tabletMin){
+        width: 310px;
+        position: relative;
+        left: 45px;
+      }
     }
     &__btn {
       margin: 20px 0 10px 0;
@@ -52,6 +88,9 @@
       font-size: 1.3rem;
       cursor: pointer;
       align-self: center;
+      @media (min-width: $tabletMin){
+        margin: 0 30px 0 0;
+      }
     }
   }
   &__video {
@@ -64,8 +103,10 @@
     /* border: solid green 3px; */
     position: relative;
     @media (min-width: $tabletMin) {
-      width: 50%;
-      /* padding: 100px 10px 40px 10px; */
+      border: solid yellow 3px;
+      position: relative;
+      padding: 0;
+      margin: 20% 0 0 0;
     }
     &__proper {
       position: relative;

@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.LearnMore{
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        a {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            border: solid 1px $footer-blue;
+            border-radius: 4px;
+            background-color: transparent;
+            margin: 0;
+            padding: 0 6px;
+            color: $footer-blue;
+            font-family: $PNRegular;
+            font-weight: bold;
+            font-size: 1rem;
+
+        }
+        &::after{
+            content: url("../../public/assets/componentIcons/LearnMoreArrow.png");
+            margin: 5px 0 0 8px;
+            @media (min-width: $tabletMin){
+                padding: 0;
+                margin: -20px 0 0 8px;
+            }
+        }
+    }
+}
