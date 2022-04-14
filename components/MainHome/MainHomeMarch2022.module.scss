@@ -24,6 +24,15 @@
       height: 65vh;
       flex-wrap: wrap;
     }
+    @media (min-width: 601px){
+      height: 43vh;
+    }
+    @media (min-width: 700px){
+      height: 55vh;
+    }
+    @media (min-width: 800px){
+      height: 40vh;
+    }
     &__box{
       position: relative;
       @media (min-width: $tabletMin) {
@@ -71,9 +80,22 @@
       font-size: 1rem;
       border: solid fuchsia 3px;
       @media (min-width: $tabletMin){
-        width: 310px;
-        position: relative;
-        left: 45px;
+        width: 350px;
+        position: absolute;
+        right: 30vw;
+        bottom: -20px;
+      }
+
+      @media (min-width: 690px){
+        right: 39vw;
+        top: 56%;
+      }
+      @media (min-width: 700px){
+        right: 39vw;
+        top: 65%;
+      }
+      @media (min-width: 840px){
+        right: 50vw;
       }
     }
     &__btn {
