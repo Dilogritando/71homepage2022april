@@ -12,35 +12,15 @@
     @media (min-width: $tabletMin) {
       font-size: 4rem;
       justify-content: space-between;
-      /* margin: 0 2rem 6rem 2rem; */
     }
   }
   &__main{
     position: relative;
+    display: flex;
+    flex-direction: column;
     @media (min-width: $tabletMin) {
-      border: solid red 3px;
-      display: flex;
-      flex-direction: column;
       height: 65vh;
       flex-wrap: wrap;
-    }
-    @media (min-width: 601px){
-      height: 43vh;
-    }
-    @media (min-width: 700px){
-      height: 55vh;
-    }
-    @media (min-width: 800px){
-      height: 40vh;
-    }
-    &__box{
-      position: relative;
-      @media (min-width: $tabletMin) {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        border: solid green 3px;
-      }
     }
   }
   &__secondary{
@@ -78,24 +58,10 @@
     &__text {
       color: black;
       font-size: 1rem;
-      border: solid fuchsia 3px;
       @media (min-width: $tabletMin){
         width: 350px;
-        position: absolute;
-        right: 30vw;
-        bottom: -20px;
-      }
-
-      @media (min-width: 690px){
-        right: 39vw;
-        top: 56%;
-      }
-      @media (min-width: 700px){
-        right: 39vw;
-        top: 65%;
-      }
-      @media (min-width: 840px){
-        right: 50vw;
+        margin: 0 0 0 32px;
+        padding: 0 0 0 0;
       }
     }
     &__btn {
@@ -120,21 +86,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 40px 10px; */
     justify-content: center;
-    /* border: solid green 3px; */
     position: relative;
     @media (min-width: $tabletMin) {
-      border: solid yellow 3px;
-      position: relative;
+      position: absolute;
       padding: 0;
-      margin: 20% 0 0 0;
+      width: 50%;
+      top: 15%;
+      right: 0;
     }
     &__proper {
       position: relative;
       width: 100%;
       min-width: 228px;
-        min-height: 128px;
+      min-height: 128px;
       display: flex;
       flex-direction: column;
       align-content: center;
@@ -143,9 +108,6 @@
       cursor: pointer;
       border: solid 3px $dark-blue;
       &__player {
-        /* height: 369px; */
-        /* border: solid red 2px; */
-        /* width: 100%; */
         min-width: 228px;
         min-height: 128px;
         display: flex;
@@ -156,7 +118,6 @@
         background-repeat: no-repeat;
         background-size: auto;
         position: relative;
-        /* border: solid 5px orangered; */
         .react-player__preview {
           /* width: 100%;
           background-image: url("/PlaceholderHomeVideo.png"); */
@@ -184,18 +145,11 @@
         justify-content: center;
         flex-direction: row;
         border: none;
-        /* width: 228px;
-        height: 57px; */
         padding: 0 0 0 0;
         cursor: pointer;
         &::before{
           content: url("../../public/assets/componentIcons/playBtn.png");
           margin: 5px 10px 0 0;
-        }
-        @media (max-width: $mobileMax) {
-          /* width: 143px;
-          height: 35px;
-          font-size: 1rem; */
         }
       }
     }

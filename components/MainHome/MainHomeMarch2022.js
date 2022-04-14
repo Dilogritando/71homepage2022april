@@ -17,10 +17,10 @@ const MainHomeMarch2022 = () => {
             A Service You Can Count On.
           </h2>
         </div>
-        <div className={styles.Hero__main__box}>
-          <div className={styles.Hero__video}>
-            <div className={styles.Hero__video__proper}>
-              {/* <ReactPlayer
+        {/* <div className={styles.Hero__main__box}> */}
+        <div className={styles.Hero__video}>
+          <div className={styles.Hero__video__proper}>
+            {/* <ReactPlayer
                 className={styles.Hero__video__proper__player}
                 width="100%"
                 height="100%"
@@ -29,19 +29,19 @@ const MainHomeMarch2022 = () => {
                 fallback="../../public/assets/71assets/PlaceholderHomeVideo.png"
                 light="../../public/assets/71assets/PlaceholderHomeVideo.png"
               /> */}
-            </div>
-            <div className={styles.Hero__video__controller}>
-              <button className={styles.Hero__video__controller__btn}>
-                WATCH VIDEO
-              </button>
-            </div>
           </div>
-          <p className={styles.Hero__copy__text}>
-            With 71lbs, you have a fully automated, human-backed system that
-            proactively monitors your FedEx/UPS accounts, making reducing your
-            shipping costs simple &amp; consistent.
-          </p>
+          <div className={styles.Hero__video__controller}>
+            <button className={styles.Hero__video__controller__btn}>
+              WATCH VIDEO
+            </button>
+          </div>
         </div>
+        <p className={styles.Hero__copy__text}>
+          With 71lbs, you have a fully automated, human-backed system that
+          proactively monitors your FedEx/UPS accounts, making reducing your
+          shipping costs simple &amp; consistent.
+        </p>
+        {/* </div> */}
       </div>
       <div className={styles.Hero__secondary}>
         <button className={styles.Hero__copy__btn}>
