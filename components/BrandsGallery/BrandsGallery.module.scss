@@ -2,7 +2,6 @@
 
 .BrandsGallery {
   &__container {
-    /* border: solid red 3px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,17 +9,17 @@
     align-content: center;
     padding: 3rem 2rem 2.5rem 3rem;
     @media (min-width: $tabletMin) {
-      /* font-size: 4rem; */
-      /* flex-direction: row; */
-      /* padding: 0 2rem; */
-      /* justify-content: space-between; */
       margin: 0 2rem;
     }
   }
   &__title {
     margin: 0 0 40px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $footer-blue;
   }
   &__logosContainer {
+    border: solid red 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,6 +41,7 @@
       max-height: 117px;
     }
     &__individual {
+      border: solid goldenrod 3px;
       max-height: 117px;
       width: 17%;
       position: relative;

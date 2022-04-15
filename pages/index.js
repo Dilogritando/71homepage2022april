@@ -13,9 +13,9 @@ export default function Home() {
     <div className={styles.Home__container}>
       <MainHomeMarch2022 />
       <HomeServicesModule />
-      {/*<BrandsGallery />
+      <BrandsGallery />
       <TestimonialSlider />
-      <StartSaving />
+      {/*<StartSaving />
       <LoginHome />
       <KeepInTouch /> */}
     </div>
