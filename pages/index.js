@@ -14,7 +14,7 @@ export default function Home() {
       <MainHomeMarch2022 />
       <HomeServicesModule />
       <BrandsGallery />
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
       {/*<StartSaving />
       <LoginHome />
       <KeepInTouch /> */}

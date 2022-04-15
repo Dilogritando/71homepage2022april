@@ -16,13 +16,8 @@ const BrandsGallery = () => {
       <h2 className={styles.BrandsGallery__title}>
         Trusted by leading brands and savvy professionals
       </h2>
-      {/* <Image
-        src={TestimonialsPlaceholder}
-        alt=""
-        className={styles.BrandsGallery__image}
-      /> */}
       <div className={styles.BrandsGallery__logosContainer}>
-        <div className={styles.BrandsGallery__logosContainer__lineOne}>
+        <div className={styles.BrandsGallery__logosContainer__line__One}>
           <div className={styles.BrandsGallery__logosContainer__individual}>
             <Image
               src={PickleBallCentral_Logo}
@@ -32,7 +27,6 @@ const BrandsGallery = () => {
               hight={75}
             />
           </div>
-
           <div className={styles.BrandsGallery__logosContainer__individual}>
             <Image
               src={Quickbooks_Logo}
@@ -42,38 +36,8 @@ const BrandsGallery = () => {
               hight={52}
             />
           </div>
-
-          <div className={styles.BrandsGallery__logosContainer__individual}>
-            <Image
-              src={OscarDeLaRenta_Logo}
-              alt="Oscar de la Renta Logo"
-              className={styles.BrandsGallery__image}
-              width={288}
-              hight={42}
-            />
-          </div>
-
-          <div className={styles.BrandsGallery__logosContainer__individual}>
-            <Image
-              src={Tatcha_Logo}
-              alt="Tatcha Logo"
-              className={styles.BrandsGallery__image}
-              width={269}
-              hight={44}
-            />
-          </div>
-
-          <div className={styles.BrandsGallery__logosContainer__individual}>
-            <Image
-              src={BloomsyBox_Logo}
-              alt="Bloomsy Box Logo"
-              className={styles.BrandsGallery__image}
-              width={195}
-              hight={46}
-            />
-          </div>
         </div>
-        <div className={styles.BrandsGallery__logosContainer__lineTwo}>
+        <div className={styles.BrandsGallery__logosContainer__line__Two}>
           <div className={styles.BrandsGallery__logosContainer__individual}>
             <Image
               src={GetMaineLobster_Logo}
@@ -83,7 +47,6 @@ const BrandsGallery = () => {
               hight={73}
             />
           </div>
-
           <div className={styles.BrandsGallery__logosContainer__individual}>
             <Image
               src={AdamsApple_Logo}
@@ -93,7 +56,6 @@ const BrandsGallery = () => {
               hight={117}
             />
           </div>
-
           <div className={styles.BrandsGallery__logosContainer__individual}>
             <Image
               src={Kitsch_Logo}
@@ -103,7 +65,28 @@ const BrandsGallery = () => {
               hight={50}
             />
           </div>
-
+        </div>
+        <div className={styles.BrandsGallery__logosContainer__line__Three}>
+          <div className={styles.BrandsGallery__logosContainer__individual}>
+            <Image
+              src={OscarDeLaRenta_Logo}
+              alt="Oscar de la Renta Logo"
+              className={styles.BrandsGallery__image}
+              width={288}
+              hight={42}
+            />
+          </div>
+          <div className={styles.BrandsGallery__logosContainer__individual}>
+            <Image
+              src={Tatcha_Logo}
+              alt="Tatcha Logo"
+              className={styles.BrandsGallery__image}
+              width={269}
+              hight={44}
+            />
+          </div>
+        </div>
+        <div className={styles.BrandsGallery__logosContainer__line__Four}>
           <div className={styles.BrandsGallery__logosContainer__individual}>
             <Image
               src={Sonnys_Logo}
@@ -111,6 +94,15 @@ const BrandsGallery = () => {
               className={styles.BrandsGallery__image}
               width={260}
               hight={68}
+            />
+          </div>
+          <div className={styles.BrandsGallery__logosContainer__individual}>
+            <Image
+              src={BloomsyBox_Logo}
+              alt="Bloomsy Box Logo"
+              className={styles.BrandsGallery__image}
+              width={195}
+              hight={46}
             />
           </div>
         </div>
