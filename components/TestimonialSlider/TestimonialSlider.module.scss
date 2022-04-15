@@ -2,90 +2,127 @@
 
 .TestimonialSlider {
   &__container {
-    /* border: solid red 3px; */
-    width: 85%;
+    /* border: solid blue 1px; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    /* padding: 0 2rem; */
-    /* border: solid purple 3px; */
+    padding: 0;
     @media (min-width: $tabletMin) {
       /* font-size: 4rem; */
-      flex-direction: row;
+      /* flex-direction: row; */
       /* padding: 0 2rem; */
       /* justify-content: space-between; */
-      margin: 0 0 6rem 0;
+      /* margin: 0 0 6rem 0; */
       /* padding: 0 9rem; */
     }
     &__carousel {
-      width: 100%;
-      /*  border: solid 5px violet; */
+      width: 95%;
+      /* border: solid 2px green; */
     }
     &__slide {
       display: flex;
       flex-direction: row;
-      /* border: solid red 3px; */
+      /* border: solid red 2px; */
       width: 100%;
       margin: 0 0 40px 0;
-    }
-  }
-  &__source {
-    /* border: solid yellow 3px; */
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    &__image {
-      width: 227px;
-      height: 227px;
       position: relative;
-      margin: 0 0 14px 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      /* object-fit: cover; */
-    }
-    &__name {
-      font-size: 40px;
-      font-family: $PNRegular;
-      color: black;
-      margin: 0;
-      padding: 0;
-    }
-    &__role {
-      font-size: 35px;
-      font-family: $PNSemi;
-      color: black;
-      margin: 0;
-      padding: 0;
+      &__source {
+        border-right: solid $light-blue 4px;
+        width: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        padding: 0 10px;
+        margin: 0;
+        @media (min-width: $tabletMin) {
+          width: 24rem;
+        }
+        &__image {
+          width: 130%;
+          height: 40%;
+          position: relative;
+          margin: 0 0 15px 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          /* object-fit: cover; */
+        }
+        &__name {
+          font-size: 1.5rem;
+          font-family: $PNRegular;
+          font-weight: bold;
+          color: black;
+          margin: 0;
+          padding: 0;
+        }
+        &__role {
+          font-size: 1.1rem;
+          font-family: $PNSemiIt;
+          color: black;
+          margin: 0;
+          padding: 0;
+        }
+      }
     }
   }
   &__divider {
     /* border: solid purple 3px; */
   }
   &__testimonial {
-    /* border: solid green 3px; */
-    width: 70%;
+    /* border: solid rgb(51, 255, 0) 2px; */
+    /* width: 70%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    &__text p {
-      font-size: 1.6em;
+    margin: 0 0 0 15px;
+    &__text {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 85%;
+      p {
+      font-size: 1rem;
       font-family: $PNRegular;
       text-transform: uppercase;
       color: black;
       text-align: left;
+      line-height: 1.2rem;
+      width: 90%;
+      &::before{
+        content: "“";
+        position: relative;
+        left: -20px;
+        font-size: 48px;
+      }
+      &::after{
+        content: "“";
+        position: relative;
+        right: -20px;
+        font-size: 48px;
+        display: inline-block;
+        transform: rotate(180deg);
+        @media (min-width: 424px) {
+          left: 15%;
+          right: 0;
+        }
+      }
       span {
         color: white;
         background-color: #193d67;
+        line-height: 1.2rem;
+        margin: 0;
+        padding: 0;
+      }
       }
     }
   }

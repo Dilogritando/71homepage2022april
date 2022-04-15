@@ -49,13 +49,22 @@ $PNThinIt: "Proxima Nova Thin Italics";
 $PNRegular: "Proxima Nova";
 
 @font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('/assets/fonts/ProximaNovaFontFamily/PROXIMANOVASEMIBOLD-WEBFONT.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+$PNSemi: "Proxima Nova Semibold";
+
+@font-face {
   font-family: 'Proxima Nova Semi It';
   src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Semibold-Italic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
-$PNSemi: "Proxima Nova Semi It";
+$PNSemiIt: "Proxima Nova Semi It";
 
 @font-face {
   font-family: 'Proxima Nova';

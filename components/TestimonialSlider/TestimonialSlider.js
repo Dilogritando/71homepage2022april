@@ -64,8 +64,12 @@ const TestimonialSlider = () => {
   const testimonialSlideStructure = (testimonial, index) => {
     return (
       <div className={styles.TestimonialSlider__container__slide} key={index}>
-        <div className={styles.TestimonialSlider__source}>
-          <div className={styles.TestimonialSlider__source__image}>
+        <div className={styles.TestimonialSlider__container__slide__source}>
+          <div
+            className={
+              styles.TestimonialSlider__container__slide__source__image
+            }
+          >
             <Image
               src={testimonial.logoUrl}
               alt={testimonial.logoAlt}
@@ -73,10 +77,14 @@ const TestimonialSlider = () => {
               objectFit="contain"
             />
           </div>
-          <p className={styles.TestimonialSlider__source__name}>
+          <p
+            className={styles.TestimonialSlider__container__slide__source__name}
+          >
             {testimonial.sourceName}
           </p>
-          <p className={styles.TestimonialSlider__source__role}>
+          <p
+            className={styles.TestimonialSlider__container__slide__source__role}
+          >
             {testimonial.sourceRole}
           </p>
         </div>
