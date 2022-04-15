@@ -5,6 +5,7 @@ $dark-blue: #292C57;
 $header-blue: #1E6894;
 $subheader-blue: #1A3D68;
 $green-btn: #57DAB2;
+$divider: #2D3AE8;
 
 $mid-blue: #193d67;
 $green: #5fbe09;
@@ -100,13 +101,29 @@ $PNCondLt: "Proxima Nova Cond Lt";
 $PNCondBld: "Proxima Nova Cond Bold";
 
 @font-face {
-  font-family: 'Proxima Nova Alt Bold Italic';
+  font-family: 'Proxima Nova Alt';
+  src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Alt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+$PNAlt: "Proxima Nova Alt";
+
+@font-face {
+  font-family: 'Proxima Nova Alt';
   src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Alt-Bold-Italic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
-$PNABOI: "Proxima Nova Alt Bold Italic";
+
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src: url('/assets/fonts/ProximaNovaFontFamily/Proxima-Nova-Alt-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Proxima Nova Black Italic';

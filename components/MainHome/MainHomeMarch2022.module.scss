@@ -5,8 +5,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
-    margin: 0 0 35px 0;
+    padding: 0 2rem 35px 2rem;
+    margin: 0 0 0px 0;
     //Animation CSS
     animation: containers-load 900ms ease-in;
     @media (min-width: $tabletMin) {
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     @media (min-width: $tabletMin) {
-      height: 65vh;
+      height: 57vh;
       flex-wrap: wrap;
     }
   }

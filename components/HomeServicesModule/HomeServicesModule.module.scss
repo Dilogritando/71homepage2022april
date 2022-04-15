@@ -2,35 +2,120 @@
 
 .HomeServicesModule{
     &__container{
-        border: solid green 3px;
-    }
-    h2 {
-
+        padding: 0 2rem 35px 2rem;
+        margin: 0 0 0px 0;
+        h2{
+            text-align: center;
+            @media (min-width: $tabletMin){
+                margin: 0 0 50px 0;
+            }
+        }
     }
     &__content{
+        margin: 0 0 3rem 0;
+        @media (min-width: $tabletMin) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 0 0 0;
+        }
         h2{
-
+            color: $footer-blue;
+            margin: 0 0 13px 0;
+            text-align: center;
+            @media (min-width: $tabletMin){
+                margin: 20px 0 0 0;
+            }
         }
         p{
-
+            text-align: center;
+            @media (min-width: $tabletMin){
+                text-align: left;
+            }
         }
-        button {
-
+        &__divider{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 1px;
+            background-color: $divider;
+            border-radius: 1px;
+            @media (min-width: $tabletMin) {
+                margin: 50px 0 0px 0;
+                width: 70%;
+            }
         }
     }
     &__mainService{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__container{
+            @media (min-width: $tabletMin){
+                display: flex;
+                flex-direction: row;
+            }
+        }
         &__image{
-
+            padding: 0 0 0 0;
+            margin: 0 0 36px 0;
+            @media (min-width: $tabletMin){
+                width: 50%;
+                margin: 30px 0 0 0;
+                height: 50%;
+            }
+        }
+        &__contents{
+            @media (min-width: $tabletMin){
+                width: 350px;
+            }
         }
     }
     &__secondService{
+        display: none;
+        @media (min-width: $tabletMin) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            .HomeServicesModule__content{
+                margin: 95px 0 0 0;
+                padding: 0;
+            }
+        }
         &__image{
-
+            @media (min-width: $tabletMin){
+                width: 150%;
+                margin: 0px 0 0 0;
+            }
         }
     }
     &__thirdService{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__container{
+            @media (min-width: $tabletMin){
+                display: flex;
+                flex-direction: row;
+            }
+        }
         &__image{
-
+            padding: 0 0 0 0;
+            margin: 0 0 36px 0;
+            @media (min-width: $tabletMin){
+                width: 130%;
+                margin: 0 0 0 0;
+            }
+        }
+        .HomeServicesModule__content{
+            @media (min-width: $tabletMin){
+                margin: 44px 0 0 50px;
+                padding: 0;
+            }
         }
     }
 }

@@ -17,7 +17,6 @@ const MainHomeMarch2022 = () => {
             A Service You Can Count On.
           </h2>
         </div>
-        {/* <div className={styles.Hero__main__box}> */}
         <div className={styles.Hero__video}>
           <div className={styles.Hero__video__proper}>
             {/* <ReactPlayer
@@ -41,7 +40,6 @@ const MainHomeMarch2022 = () => {
           proactively monitors your FedEx/UPS accounts, making reducing your
           shipping costs simple &amp; consistent.
         </p>
-        {/* </div> */}
       </div>
       <div className={styles.Hero__secondary}>
         <button className={styles.Hero__copy__btn}>
