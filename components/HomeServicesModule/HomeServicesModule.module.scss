@@ -13,11 +13,15 @@
     }
     &__content{
         margin: 0 0 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @media (min-width: $tabletMin) {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             margin: 0 0 0 0;
+            width: 350px;
         }
         h2{
             color: $footer-blue;
@@ -33,18 +37,7 @@
                 text-align: left;
             }
         }
-        &__divider{
-            margin: 0;
-            padding: 0;
-            position: relative;
-            height: 1px;
-            background-color: $divider;
-            border-radius: 1px;
-            @media (min-width: $tabletMin) {
-                margin: 50px 0 0px 0;
-                width: 70%;
-            }
-        }
+
     }
     &__mainService{
         display: flex;
@@ -81,6 +74,7 @@
         &__container{
             display: flex;
             flex-direction: row;
+            justify-content: center;
             .HomeServicesModule__content{
                 margin: 95px 0 0 0;
                 padding: 0;
@@ -89,6 +83,10 @@
         &__image{
             @media (min-width: $tabletMin){
                 width: 150%;
+                margin: 0px 0 0 0;
+            }
+            @media (min-width: $laptopMin){
+                width: 50%;
                 margin: 0px 0 0 0;
             }
         }
@@ -107,7 +105,7 @@
             padding: 0 0 0 0;
             margin: 0 0 36px 0;
             @media (min-width: $tabletMin){
-                width: 130%;
+                width: 50%;
                 margin: 0 0 0 0;
             }
         }

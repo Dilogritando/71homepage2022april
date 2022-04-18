@@ -33,6 +33,8 @@
       flex-direction: row;
       align-items: center;
       align-content: center;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
     }
   }
   &__copy {
@@ -72,7 +74,8 @@
       border-radius: 4px;
       background-color: $green-btn;
       color: white;
-      font-family: $PNSemi;
+      font-family: $PNRegular;
+      font-weight: bold;
       font-size: 1.3rem;
       cursor: pointer;
       align-self: center;

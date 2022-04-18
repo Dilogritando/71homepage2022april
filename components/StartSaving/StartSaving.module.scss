@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.StartSaving{
+    &__container{
+        border: solid red 2px;
+        background-image: url("../../public/assets/componentIcons/SaveNowBackground.png");
+        &__inner{
+            border: solid green 2px;
+        }
+    }
+    &__content{
+        button{
+            background-color: $footer-blue;
+            color: white;
+            border-radius: 4px;
+            padding: 13px;
+            margin: 0 0 22px 0;
+            font-family: $PNRegular;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        p{
+
+        }
+    }
+}

@@ -15,9 +15,9 @@ export default function Home() {
       <HomeServicesModule />
       <BrandsGallery />
       <TestimonialSlider />
-      {/*<StartSaving />
-      <LoginHome />
-      <KeepInTouch /> */}
+      <StartSaving />
+      {/* <LoginHome /> */}
+      {/* <KeepInTouch /> */}
     </div>
   );
 }
