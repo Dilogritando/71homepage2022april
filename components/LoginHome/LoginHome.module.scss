@@ -2,19 +2,37 @@
 
 .LoginHome {
   &__container {
-    /* border: solid red 3px; */
     width: 100%;
+    margin: 44px 0;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
     @media (min-width: $tabletMin) {
-      /* font-size: 4rem; */
-      /* flex-direction: row; */
-      /* padding: 0 2rem; */
-      /* justify-content: space-between; */
       margin: 0 2rem 6rem 2rem;
     }
+    span {
+      color: $footer-blue;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin: 30px 0;
+      padding: 0;
+    }
   }
-  &__image {
-    border: solid green 3px;
-    width: 100%;
+  &__copy {
+    p{
+      font-size: 24px;
+      color: $footer-blue;
+      text-align: left;
+      line-height: 29.23px;
+      margin: 0 0 2rem 0;
+      padding: 0;
+    }
   }
+  &__Form{
+    border: solid purple 3px;
+    padding: 0;
+    margin: 0;
+  }
+
 }

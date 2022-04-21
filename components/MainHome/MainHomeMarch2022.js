@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import styles from "./MainHomeMarch2022.module.scss";
 
 import LearnMore from "../LearnMoreBtn/LearnMore";
+import MainButton from "../MainButton/MainButton";
 
 const MainHomeMarch2022 = () => {
   return (
@@ -42,9 +43,10 @@ const MainHomeMarch2022 = () => {
         </p>
       </div>
       <div className={styles.Hero__secondary}>
-        <button className={styles.Hero__copy__btn}>
-          Sign up for a Free Demo
-        </button>
+        <MainButton
+          buttonText="Sign up for a Free Demo"
+          buttonRedirectLink="/"
+        />
         <LearnMore redirectLink="/" />
       </div>
     </div>

@@ -12,7 +12,6 @@ const KeepInTouch = () => {
                 M-F 8:30 am EST - 5:00pm EST
             </p>
         </div>
-
     </div>
   )
 }

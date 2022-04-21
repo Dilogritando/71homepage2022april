@@ -14,7 +14,7 @@ export default function Layout({ children }) {
             name="71lbs"
             content="Save money and time in FedEx/UPS contract negotiations, late delivery refunds, lost/damaged claims, shipping insurance, and more."
             />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="../public/favicon.ico" />
           {/* <link
             rel="preload"
             href="/assets/fonts/ProximaNovaFontFamily/ProximaNovaT-Thin.ttf"

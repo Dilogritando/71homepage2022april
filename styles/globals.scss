@@ -36,6 +36,14 @@ h4{
   padding: 0;
   margin: 20px 0;
 }
+h6 {
+  font-family: $PNRegular;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: $footer-blue;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
 p{
   font-family: $PNRegular;
   font-size: 15px;
@@ -43,13 +51,10 @@ p{
   line-height: 18px;
   text-align: left;
 }
-
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }

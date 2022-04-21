@@ -9,14 +9,14 @@ const LoginHome = () => {
     <div className={styles.LoginHome__container}>
       <div className={styles.LoginHome__copy}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-          mollitia unde deleniti natus
+          Open your account in seconds with your company name, email address,
+          and phone.
         </p>
-        <span>Insert your fedEx.com credentials</span>
       </div>
       <div className={styles.LoginHome__Form}>
         <LoginForm />
       </div>
+      <span>Insert your fedex.com/ups.com credentials</span>
     </div>
   );
 };

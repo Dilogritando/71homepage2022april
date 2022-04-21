@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.ProductPages{
+    &__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0;
+        padding: 0 2rem;
+    }
+    &__hero{
+        width: 100%;
+        position: relative;
+        border: solid red 3px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0 0 70px 0;
+        h1, h3{
+            text-align: center;
+            @media (min-width: $tabletMax){
+                text-align: left;
+            }
+        }
+        &__imageContainer{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            border: solid purple 3px;
+            width: 50%;
+            height: 100%;
+        }
+    }
+    &__factsBox{
+        width: 100%;
+        position: relative;
+        border: solid red 3px;
+    }
+    &__CTA{
+        width: 100%;
+        position: relative;
+        border: solid red 3px;
+    }
+    &__testimonial{
+        width: 100%;
+        position: relative;
+        border: solid red 3px;
+    }
+    &__ImageQuote{
+        width: 100%;
+        position: relative;
+        border: solid red 3px;
+        &__copy{
+
+        }
+    }
+}

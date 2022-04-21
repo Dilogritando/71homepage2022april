@@ -16,8 +16,8 @@ export default function Home() {
       <BrandsGallery />
       <TestimonialSlider />
       <StartSaving />
-      {/* <LoginHome /> */}
-      {/* <KeepInTouch /> */}
+      <LoginHome />
+      <KeepInTouch />
     </div>
   );
 }
