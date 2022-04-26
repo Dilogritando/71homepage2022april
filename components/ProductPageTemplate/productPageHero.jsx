@@ -17,12 +17,9 @@ const ProductPageHero = ({
     <div className={styles.ProductPages__hero}>
         <h1>{title}</h1>
         <div className={styles.ProductPages__hero__imageContainer}>
-            <Image
+            <img
                 src={imageHero}
                 alt={imageHeroAlt}
-                layout="fill"
-                /* height="100%"
-                width="100%" */
             />
         </div>
         <h3>{subtitle}</h3>

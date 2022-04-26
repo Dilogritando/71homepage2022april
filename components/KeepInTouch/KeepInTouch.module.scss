@@ -11,6 +11,7 @@
         @media (min-width: $laptopMin){
             flex-direction: row;
             padding: 0 5rem;
+            justify-content: space-around;
         }
         h6{
             text-align: center;

@@ -16,7 +16,11 @@ const LoginHome = () => {
       <div className={styles.LoginHome__Form}>
         <LoginForm />
       </div>
-      <span>Insert your fedex.com/ups.com credentials</span>
+      <span>
+        Insert your fedex.com/
+        <wbr />
+        ups.com credentials
+      </span>
     </div>
   );
 };
