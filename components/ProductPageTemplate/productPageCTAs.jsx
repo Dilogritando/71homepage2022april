@@ -20,22 +20,22 @@ const ProductPageCTAs = ({
         />
         <p>{leadThirdSection}</p>
         <div className={styles.ProductPages__CTA__icons}>
-            <div className={styles.ProductPages__CTA__icons__One}>
-                <Image
+            <div className={styles.ProductPages__CTA__icons__Ind}>
+                <img
                     src={iconOneThirdSection}
                     alt="Complementary icon"
                     className="ProductPages__CTA__icons__One__image"
-                    layout="fill"
+                    /* layout="fill" */
                 />
                 <p>{copyOneThirdSection}</p>
                 <LearnMore redirectLink="/" />
             </div>
-            <div className={styles.ProductPages__CTA__icons__Two}>
-                <Image
+            <div className={styles.ProductPages__CTA__icons__Ind}>
+                <img
                     src={iconTwoThirdSection}
                     alt="Complementary icon"
                     className="ProductPages__CTA__icons__One__image"
-                    layout="fill"
+                    /* layout="fill" */
                 />
                 <p>{copyTwoThirdSection}</p>
                 <LearnMore redirectLink="/" />

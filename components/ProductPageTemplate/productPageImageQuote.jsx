@@ -13,11 +13,10 @@ const ProductPageImageQuote = ({
 }) => {
   return (
     <div className={styles.ProductPages__ImageQuote}>
-        <Image
+        <img
             src={lastImgSource}
             alt={lastImgAlt}
             className="ProductPages__ImageProper"
-            layout="fill"
         />
         <div className={styles.ProductPages__ImageQuote__copy}>
             <h6>{lastTitle}</h6>

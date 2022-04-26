@@ -12,7 +12,6 @@
     &__hero{
         width: 100%;
         position: relative;
-        border: solid red 1px;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -23,16 +22,26 @@
             align-content: flex-start;
             align-items: flex-start;
             justify-content: space-between;
+            margin: 4.5rem 0;
+            height: fit-content;
+            padding: 0 0 0 5rem;
         }
-
         h1{
             margin: 2.5rem 0;
+            @media (min-width: $tabletMin){
+                margin: 6.5rem 0 2.5rem 0;
+            }
         }
         h1, h3{
             text-align: center;
             @media (min-width: $tabletMin){
                 text-align: left;
                 width: 50%;
+            }
+        }
+        h3{
+            @media (min-width: $tabletMin){
+                font-size: 2.5rem;
             }
         }
         &__imageContainer{
@@ -50,28 +59,231 @@
                 right: 0;
             }
         }
+        a{
+            @media (min-width: $tabletMin){
+                align-self: flex-start;
+            }
+        }
     }
     &__factsBox{
         width: 100%;
+        margin: 2rem 0;
+        padding: 1rem;
         position: relative;
-        border: solid red 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-image: url("../../public/assets/componentIcons/ShippingRefundsBackground.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: $tabletMin){
+            width: 85%;
+            margin: 4rem auto;
+            padding: 4rem 6rem;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin: 0 0 2rem 0;
+            @media (min-width: $tabletMin){
+                font-size: 4rem;
+            }
+            span{
+                font-weight: bold;
+                font-size: 2rem;
+                color: $redHighlights;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                @media (min-width: $tabletMin){
+                    font-size: 6rem;
+                }
+            }
+        }
+        &__facts{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 0 1.5rem 0;
+            @media (min-width: $tabletMin){
+                margin: 0 0 2.5rem 0;
+            }
+            img{
+                display: flex;
+                flex-direction: column;
+                padding: 0 ;
+                margin: 0;
+                width: 4rem;
+                height: fit-content;
+                @media (min-width: $tabletMin){
+                    width: 7rem;
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+        p{
+            font-size: 1rem;
+            margin: 0 0 0 1rem;
+            color: white;
+            @media (min-width: $tabletMin){
+                font-size: 2rem;
+                line-height: 2.3rem;
+            }
+        }
     }
     &__CTA{
         width: 100%;
         position: relative;
-        border: solid red 3px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        @media (min-width: $tabletMin){
+            margin: 4.5rem 0;
+        }
+        a{
+            align-self: center;
+        }
+        p{
+            text-align: center;
+        }
+        &__icons{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            position: relative;
+            @media (min-width: $tabletMin){
+                flex-direction: row;
+                align-items: stretch;
+                justify-content: space-around;
+            }
+            &__Ind{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                position: relative;
+                margin: 1.2rem 0;
+                @media (min-width: $tabletMin){
+                    justify-content: space-around;
+                    width: 40%;
+                }
+                img{
+                    width: 25%;
+                    margin: 0;
+                    padding: 0;
+                    @media (min-width: $tabletMin){
+                        height: 95px;
+                        width: auto;
+                    }
+                }
+                p{
+                    @media (min-width: $tabletMin){
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
     }
     &__testimonial{
         width: 100%;
         position: relative;
-        border: solid red 3px;
+        margin: 3rem 0;
+        @media (min-width: $tabletMin){
+            margin: 4.5rem 0;
+        }
+        blockquote{
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            color: $dark-blue;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            @media (min-width: $tabletMin){
+                padding: 0 7rem;
+            }
+            span{
+                background-color: $green-btn;
+                margin: 0;
+                padding: 0;
+            }
+            &::before{
+                content: "“";
+                position: absolute;
+                left: -20px;
+                font-size: 6rem;
+                color: $dark-blue;
+                @media (min-width: $tabletMin){
+                    left: 65px;
+                }
+            }
+            &::after{
+                content: "“";
+                position: absolute;
+                right: 0;
+                font-size: 6rem;
+                display: inline-block;
+                transform: rotate(180deg);
+                color: $dark-blue;
+                @media (min-width: 424px) {
+                    right: 0;
+                }
+                @media (min-width: $tabletMin){
+                    right: 5rem;
+                }
+            }
+
+        }
     }
     &__ImageQuote{
         width: 100%;
         position: relative;
-        border: solid red 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 4rem 0;
+        @media (min-width: $tabletMin){
+            flex-direction: row;
+            padding: 0 5rem;
+        }
+        img{
+            width: 80%;
+            @media (min-width: $tabletMin){
+                width: 50%;
+            }
+        }
         &__copy{
-
+            margin: 0 0 0 1rem;
+            padding: 0;
+            h6{
+                color: $dark-blue;
+                line-height: 2.2rem;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                @media (min-width: $tabletMin){
+                    text-align: left;
+                }
+            }
+            p{
+                color: $footer-blue;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                @media (min-width: $tabletMin){
+                    text-align: left;
+                }
+            }
         }
     }
 }

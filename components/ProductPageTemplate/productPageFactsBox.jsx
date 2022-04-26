@@ -21,39 +21,39 @@ const ProductPageFactsBox = (
         >
             <h2>{factsHeader}</h2>
             <div
-                className={styles.ProductPages__factsBox__first}
+                className={styles.ProductPages__factsBox__facts}
             >
-                <Image
+                <img
                     src={iconFactOne}
                     alt="First fact icon"
-                    className="ProductPages__hero__image"
-                    layout="fill"
+                    className="ProductPages__factsBox__image"
+                    /* layout="fill" */
                 />
                 <p>
                     {factOne}
                 </p>
             </div>
             <div
-                className={styles.ProductPages__factsBox__second}
+                className={styles.ProductPages__factsBox__facts}
             >
-                <Image
+                <img
                     src={iconFactTwo}
                     alt="Second fact icon"
-                    className="ProductPages__hero__image"
-                    layout="fill"
+                    className="ProductPages__factsBox__image"
+                    /* layout="fill" */
                 />
                 <p>
                     {factTwo}
                 </p>
             </div>
             <div
-                className={styles.ProductPages__factsBox__third}
+                className={styles.ProductPages__factsBox__facts}
             >
-                <Image
+                <img
                     src={iconFactThree}
                     alt="Third fact icon"
-                    className="ProductPages__hero__image"
-                    layout="fill"
+                    className="ProductPages__factsBox__image"
+                    /* layout="fill" */
                 />
                 <p>
                     {factThree}
