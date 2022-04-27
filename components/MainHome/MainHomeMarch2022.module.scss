@@ -109,10 +109,9 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      border: solid 3px $dark-blue;
       &__player {
         min-width: 228px;
-        min-height: 128px;
+        min-height: 174px;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -121,6 +120,7 @@
         background-repeat: no-repeat;
         background-size: auto;
         position: relative;
+        border: solid red 1px;
         .react-player__preview {
           /* width: 100%;
           background-image: url("/PlaceholderHomeVideo.png"); */

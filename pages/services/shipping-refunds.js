@@ -11,8 +11,8 @@ const Shipping = () => {
   return (
     <div className={styles.ProductPages__container}>
       <ProductPageHero
-        title="Shipping Refunds "
-        subtitle="With a the click of a few buttons, you’re half way to thousands in savings."
+        title="Automatic Shipping Refunds"
+        subtitle="The fastest, easiest way to make money back on your shipping spend. With a the click of a few buttons, you’re half way to thousands in savings."
         imageHero="/assets/productPagesAssets/refund-shipping1.png"
         imageHeroAlt="Woman receiving a package from a delivery person and money being exchanged by them"
         mainBtnText="Start Saving"
@@ -22,14 +22,32 @@ const Shipping = () => {
         factsColor="#0496FF"
         factsHeader={
           <>
-            Did you know that if your FedEx/UPS shipment is delivered late -even
-            by <span>60 seconds</span> - your company is entitled to a full
-            refund?
+            Hands down, the easiest way to make money from your shipping. Our
+            fully automated, human backed system will find your refund
+            opportunities and we will file <span>(fight!)</span> for your refund
+            money. Best part, <span>No Refunds - NO Fees</span>. That simple.
           </>
         }
-        factOne="Our system identifies overnight, ground, and international late shipments, and automatically files claims for you"
-        factTwo="Carrier credits/refunds post weekly on your FedEx/UPS account"
-        factThree="No sign-up fees. No monthly fees. We only invoice you if we find you refunds!"
+        factOne={
+          <>
+            <strong>Seamless:</strong> <br /> A quick and easy sign-up with your
+            company information and FedEx/UPS credentials is all you need to get
+            started.
+          </>
+        }
+        factTwo={
+          <>
+            <strong>Covered: </strong> <br />
+            Contingency based service. We don’t get paid until you get your
+            shipping refunds.
+          </>
+        }
+        factThree={
+          <>
+            <strong>Analytics: </strong> <br /> State of the art dashboard for a
+            360 view of your shipping data.
+          </>
+        }
         iconFactOne="/assets/productPagesAssets/FirstIconShippingRefunds.png"
         iconFactTwo="/assets/productPagesAssets/SecondIconShippingRefunds.png"
         iconFactThree="/assets/productPagesAssets/ThirdIconShippingRefunds.png"
