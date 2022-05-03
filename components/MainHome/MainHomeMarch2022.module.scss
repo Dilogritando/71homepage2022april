@@ -12,6 +12,9 @@
     @media (min-width: $tabletMin) {
       font-size: 4rem;
       justify-content: space-between;
+      /* padding: 0 11rem 35px 11rem; */
+    }
+    @media (min-width: $laptopMin){
       padding: 0 11rem 35px 11rem;
     }
   }
@@ -120,12 +123,20 @@
         align-items: center;
         background-repeat: no-repeat;
         background-size: auto;
-        position: relative;
-        border: solid red 1px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        video{
+          position: relative;
+          left: 0;
+          top: 0;
+          transform: none
+        }
         .react-player__preview {
-          /* width: 100%;
-          background-image: url("/PlaceholderHomeVideo.png"); */
-          /* border: solid blue 2px; */
+          min-height: 230px !important;
+        }
+        .react-player__shadow {
+          min-height: 230px !important;
         }
       }
     }
