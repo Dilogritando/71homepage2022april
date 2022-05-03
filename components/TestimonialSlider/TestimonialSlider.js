@@ -107,7 +107,9 @@ const TestimonialSlider = () => {
           return testimonialSlideStructure(service, index);
         })}
       </Carousel>
-      <DividerLine />
+      <div className={styles.TestimonialSlider__divider}>
+        <DividerLine />
+      </div>
     </div>
   );
 };

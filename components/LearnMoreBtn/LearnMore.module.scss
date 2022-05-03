@@ -22,12 +22,14 @@
             border-radius: 4px;
             background-color: transparent;
             margin: 0;
-            padding: 0 6px;
+            padding: 2px 7px;
             color: $footer-blue;
             font-family: $PNRegular;
             font-weight: bold;
             font-size: 1rem;
-
+            @media (min-width: $tabletMin){
+                font-size: 1.6rem;
+            }
         }
         &::after{
             content: url("../../public/assets/componentIcons/LearnMoreArrow.png");

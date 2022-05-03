@@ -8,13 +8,17 @@
         flex-direction: column;
         padding: 0 2rem;
         margin: 0;
+        /* border: solid red 2px; */
         @media (min-width: $laptopMin){
             flex-direction: row;
             padding: 0 5rem;
             justify-content: space-around;
+            margin: 2rem 0 0 0;
         }
         h6{
             text-align: center;
+            font-size: 64px;
+            line-height: 64px;
             @media (min-width: $laptopMin){
                 text-align: left;
                 font-size: 100px;
@@ -26,9 +30,12 @@
             min-width: 380px;
         }
         p{
-            font-size: 1.5rem;
+            font-size: 15px;
             text-align: center;
-            line-height: 2rem;
+            line-height: 1.4rem;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
             @media (min-width: $laptopMin){
                 text-align: left;
             }

@@ -1,5 +1,4 @@
 import React from "react";
-/* import ReactPlayer from "react-player"; */
 import dynamic from "next/dynamic";
 import styles from "./MainHomeMarch2022.module.scss";
 
@@ -33,11 +32,11 @@ const MainHomeMarch2022 = () => {
               light="/assets/71assets/PlaceholderHomeVideo.png"
             />
           </div>
-          <div className={styles.Hero__video__controller}>
+          {/* <div className={styles.Hero__video__controller}>
             <button className={styles.Hero__video__controller__btn}>
               WATCH VIDEO
             </button>
-          </div>
+          </div> */}
         </div>
         <p className={styles.Hero__copy__text}>
           With 71lbs, you have a fully automated, human-backed system that

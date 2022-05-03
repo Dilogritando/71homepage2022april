@@ -146,6 +146,14 @@ $PNAlt: "Proxima Nova Alt";
 }
 $PNABLI: 'Proxima Nova Black Italic';
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+}
+$ROBOTOBLACK: 'Roboto';
+
 //!--End fonts--!
 
 //Media Queries - Responsive
