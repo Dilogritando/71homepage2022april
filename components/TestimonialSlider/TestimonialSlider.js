@@ -8,6 +8,7 @@ import Shipmonk_Logo from "../../public/assets/BrandsLogos/Shipmonk_Logo.png";
 import UnderwearStation_Logo from "../../public/assets/BrandsLogos/UnderwearStation_Logo.png";
 import SkatePro_Logo from "../../public/assets/BrandsLogos/SkatePro_Logo.png";
 import { Carousel } from "react-responsive-carousel";
+import DividerLine from "../DividerLine/DividerLine";
 
 const TestimonialSlider = () => {
   const testimonials = [
@@ -88,15 +89,6 @@ const TestimonialSlider = () => {
             {testimonial.sourceRole}
           </p>
         </div>
-
-        {/* <Image
-          width="4px"
-          height="100%"
-          src="../../public/assets/componentIcons/TestimonialsDivider.png"
-          alt="Blue vertical line dividing the brand logo and source from quote"
-          className={styles.TestimonialSlider__divider}
-        /> */}
-
         <div className={styles.TestimonialSlider__testimonial}>
           <blockquote className={styles.TestimonialSlider__testimonial__text}>
             {testimonial.sourceQuote}
@@ -115,6 +107,7 @@ const TestimonialSlider = () => {
           return testimonialSlideStructure(service, index);
         })}
       </Carousel>
+      <DividerLine />
     </div>
   );
 };

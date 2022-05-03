@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.dividerLine{
+    padding: 0;
+    margin: 0;
+    width: 65%;
+    @media (min-width: $tabletMin){
+        width: 90%;
+    }
+    img{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}

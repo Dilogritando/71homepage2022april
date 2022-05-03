@@ -8,8 +8,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
     @media (min-width: $tabletMin) {
-      margin: 0 2rem 6rem 2rem;
+      /* margin: 0 11rem 6rem 11rem; */
+      border: solid 3px red;
     }
     span {
       color: $footer-blue;

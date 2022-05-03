@@ -6,9 +6,7 @@ import LearnMore from '../LearnMoreBtn/LearnMore';
 import MainServiceImage from "../../public/assets/componentIcons/MainServiceImage.png";
 import SecondServiceImage from "../../public/assets/componentIcons/SecondServiceImage.png";
 import ThirdServiceImage from "../../public/assets/componentIcons/ThirdServiceImage.png";
-
-/*
-import DividerLineHorizontal from "../../public/assets/componentIcons/DividerLineHorizontal.png"; */
+import DividerLine from '../DividerLine/DividerLine';
 
 const HomeServicesModule = () => {
   return (
@@ -44,14 +42,7 @@ const HomeServicesModule = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.HomeServicesModule__content__divider}>
-                {/* <Image
-                    src={DividerLineHorizontal}
-                    alt="Divider line between services"
-                    layout='fill'
-                    className={styles.HomeServicesModule__content__divider__proper}
-                /> */}
-            </div>
+            <DividerLine />
         </div>
         <div className={styles.HomeServicesModule__secondService}>
             <div className={styles.HomeServicesModule__secondService__container}>
@@ -72,14 +63,7 @@ const HomeServicesModule = () => {
                     />
                 </div>
             </div>
-            <div className={styles.HomeServicesModule__content__divider}>
-                {/* <Image
-                    src={DividerLineHorizontal}
-                    layout='fill'
-                    alt="Divider line between services"
-                    className={styles.HomeServicesModule__content__divider__proper}
-                /> */}
-            </div>
+            <DividerLine />
         </div>
         <div className={styles.HomeServicesModule__thirdService}>
             <div className={styles.HomeServicesModule__thirdService__container}>
@@ -100,14 +84,7 @@ const HomeServicesModule = () => {
                     />
                 </div>
             </div>
-            <div className={styles.HomeServicesModule__content__divider}>
-                {/* <Image
-                    src={DividerLineHorizontal}
-                    layout='fill'
-                    alt="Divider line between services"
-                    className={styles.HomeServicesModule__content__divider__proper}
-                /> */}
-            </div>
+            <DividerLine />
         </div>
     </div>
   )
