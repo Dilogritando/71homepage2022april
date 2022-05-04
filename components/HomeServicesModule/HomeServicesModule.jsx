@@ -42,7 +42,9 @@ const HomeServicesModule = () => {
                     </div>
                 </div>
             </div>
-            <DividerLine />
+            <div className={styles.HomeServicesModule__divider}>
+                <DividerLine />
+            </div>
         </div>
         <div className={styles.HomeServicesModule__secondService}>
             <div className={styles.HomeServicesModule__secondService__container}>
@@ -63,7 +65,9 @@ const HomeServicesModule = () => {
                     />
                 </div>
             </div>
-            <DividerLine />
+            <div className={styles.HomeServicesModule__divider}>
+                <DividerLine />
+            </div>
         </div>
         <div className={styles.HomeServicesModule__thirdService}>
             <div className={styles.HomeServicesModule__thirdService__container}>
@@ -84,7 +88,9 @@ const HomeServicesModule = () => {
                     />
                 </div>
             </div>
-            <DividerLine />
+            <div className={styles.HomeServicesModule__divider}>
+                <DividerLine />
+            </div>
         </div>
     </div>
   )

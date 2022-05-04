@@ -12,10 +12,11 @@
     @media (min-width: $tabletMin) {
       font-size: 4rem;
       justify-content: space-between;
-      /* padding: 0 11rem 35px 11rem; */
+
     }
     @media (min-width: $laptopMin){
-      padding: 0 11rem 35px 11rem;
+      padding: 0 5rem 73px 5rem;
+      /* align-content: center; */
     }
   }
   &__main{
@@ -25,8 +26,10 @@
     margin: 0 0 16px 0;
     padding: 0;
     @media (min-width: $tabletMin) {
-      height: 57vh;
+      /* height: 57vh; */
       flex-wrap: wrap;
+      margin: 0 0 50px 0;
+      /* align-content: center; */
     }
   }
   &__secondary{
@@ -50,7 +53,7 @@
     margin: 34px 0 30px 0;
     @media (min-width: $tabletMin) {
       padding: 0;
-      width: 50%;
+      width: 45%;
     }
     &__title {
       span{
@@ -62,6 +65,9 @@
       font-size: 1.5rem;
       line-height: 1em;
       margin: 0;
+      @media (min-width: $tabletMin){
+        font-size: 30px;
+      }
     }
     &__text {
       color: black;
@@ -69,9 +75,15 @@
       padding: 0;
       margin: 38px 0 0 0;
       @media (min-width: $tabletMin){
-        width: 350px;
+        width: 306px;
         margin: 0 0 0 32px;
         padding: 0 0 0 0;
+        font-size: 24px;
+        line-height: 24px;
+      }
+      @media (min-width: $laptopMin){
+        width: 40%;
+        margin: 0 4%;
       }
     }
     &__btn {
@@ -103,7 +115,7 @@
       position: absolute;
       padding: 0;
       width: 44%;
-      top: 15%;
+      top: 18%;
       right: 0;
     }
     &__proper {
@@ -118,6 +130,15 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      @media (min-width: $tabletMin){
+        width: unset;
+        height: unset;
+        min-width: 345px;
+        min-height: 220px;
+      }
+      @media (min-width: $tabletMax){
+        min-width: 500px;
+      }
       &__player {
         min-width: 228px;
         height: 100%;
@@ -149,7 +170,7 @@
         }
       }
     }
-    &__controller {
+    /* &__controller {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -176,7 +197,7 @@
           margin: 5px 10px 0 0;
         }
       }
-    }
+    } */
   }
 }
 

@@ -2,6 +2,7 @@
 
 .TestimonialSlider {
   &__container {
+    /* border: solid red 2px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +10,10 @@
     align-content: center;
     padding: 0;
     @media (min-width: $tabletMin) {
-      padding: 0 11rem 35px 11rem;
+      padding: 0 4rem 35px 4rem;
+    }
+    @media (min-width: $laptopMin) {
+      padding: 0 5rem 35px 5rem;
     }
     &__carousel {
       width: 95%;
@@ -68,6 +72,7 @@
     }
   }
   &__divider {
+    /* border: solid green 2px; */
     margin: 0;
     padding: 0;
     width: 80%;
@@ -92,6 +97,10 @@
       text-align: left;
       line-height: 1.2rem;
       width: 90%;
+      @media (min-width: $tabletMin){
+        font-size: 24px;
+        line-height: 26px;
+      }
       &::before{
         content: "“";
         position: relative;
@@ -101,7 +110,6 @@
       &::after{
         content: "“";
         position: absolute;
-        /* right: -20px; */
         right: 22px;
         font-size: 48px;
         display: inline-block;
