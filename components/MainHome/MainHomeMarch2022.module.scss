@@ -5,7 +5,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 2rem 35px 2rem;
+    padding: 0 2rem 73px 2rem;
     margin: 0 0 0px 0;
     //Animation CSS
     animation: containers-load 900ms ease-in;
@@ -16,7 +16,6 @@
     }
     @media (min-width: $laptopMin){
       padding: 0 5rem 73px 5rem;
-      /* align-content: center; */
     }
   }
   &__main{
@@ -26,10 +25,8 @@
     margin: 0 0 16px 0;
     padding: 0;
     @media (min-width: $tabletMin) {
-      /* height: 57vh; */
       flex-wrap: wrap;
       margin: 0 0 50px 0;
-      /* align-content: center; */
     }
   }
   &__secondary{
@@ -44,6 +41,8 @@
       align-content: center;
       flex-wrap: nowrap;
       justify-content: flex-start;
+      width: 100%;
+      padding: 0 0 0 50px;
     }
   }
   &__copy {
@@ -53,9 +52,18 @@
     margin: 34px 0 30px 0;
     @media (min-width: $tabletMin) {
       padding: 0;
-      width: 45%;
+      margin: 34px 0 30px 0px;
+      width: 60%;
+      text-align: left;
+    }
+    @media (min-width: $laptopMin){
+      margin: 34px 0 30px 0px;
+      width: 50%;
     }
     &__title {
+      @media (min-width: $tabletMin){
+        width: 75%;
+      }
       span{
         color: $footer-blue;
       }
@@ -67,6 +75,7 @@
       margin: 0;
       @media (min-width: $tabletMin){
         font-size: 30px;
+        margin: 13px 0 0 0;
       }
     }
     &__text {
@@ -75,14 +84,17 @@
       padding: 0;
       margin: 38px 0 0 0;
       @media (min-width: $tabletMin){
-        width: 306px;
-        margin: 0 0 0 32px;
+        width: 100%;
+        margin: 0 0 0 0px;
         padding: 0 0 0 0;
         font-size: 24px;
         line-height: 24px;
       }
       @media (min-width: $laptopMin){
         width: 40%;
+        margin: 0;
+      }
+      @media (min-width: $laptopMax){
         margin: 0 4%;
       }
     }
@@ -116,7 +128,7 @@
       padding: 0;
       width: 44%;
       top: 18%;
-      right: 0;
+      right: -30px;
     }
     &__proper {
       position: relative;
@@ -133,11 +145,20 @@
       @media (min-width: $tabletMin){
         width: unset;
         height: unset;
-        min-width: 345px;
-        min-height: 220px;
+        min-width: 270px;
+        min-height: 148px;
       }
-      @media (min-width: $tabletMax){
-        min-width: 500px;
+      @media (min-width: 725px){
+        min-width: 270px;
+        min-height: 148px;
+        /* min-width: 345px;
+        min-height: 220px; */
+      }
+      @media (min-width: $laptopMin){
+        width: unset;
+        height: unset;
+        min-width: 478px;
+        min-height: 220px;
       }
       &__player {
         min-width: 228px;
